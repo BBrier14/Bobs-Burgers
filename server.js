@@ -17,7 +17,7 @@ app.use(express.json());
 var exphbs = require("express-handlebars");
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view engine", "handelabrs");
+app.set("view engine", "handlebars");
 
 // Import routes that server has access too
 var routes = require("./controllers/burgers_controller.js");
