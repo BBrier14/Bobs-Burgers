@@ -4,12 +4,12 @@ $(document).ready(function() {
     event.preventDefault();
 
     // This burger, based on ID, will be sent into the database and the page will reload
-    var burgerID = $(this)
-      .children(".burgerID")
+    var burger_id = $(this)
+      .children(".burger_id")
       .val();
     $.ajax({
       method: "PUT",
-      url: "/burgers/" + burgerID
+      url: "/burgers/" + burger_id
     }).then(function(data) {
       location.reload();
     });
