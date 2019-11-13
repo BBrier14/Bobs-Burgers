@@ -1,5 +1,68 @@
 body {
     background-image: url("../img/burger.jpg");
     background-attachment: fixed;
-  background-position: center;
+    background-position: center;
+    text-align: center;
+}
+
+.form-control {
+  text-align: center;
+}
+
+pre {
+  color: black;
+  background-image: url("../img/marble.jpg");
+
+}
+
+#devoured {
+  margin-top: 20%;
+  background-image: url("../img/marble.jpg");
+}
+
+#addburger {
+  margin-top: 20px;
+  margin-left: 8%;
+  margin-bottom: 5px;
+  background-image: url("../img/marble.jpg");
+  text-align: center;
+}
+
+#menu {
+  background-image: url("../img/marble.jpg");
+  text-align: center;
+  width: 450px;
+  margin-left: 20px;
+
+}
+
+.btn {
+  box-shadow:inset 0px 1px 0px 0px #caefab;
+	background:linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+	background-color:#77d42a;
+	border-radius:6px;
+	border:1px solid #268a16;
+	display:inline-block;
+	cursor:pointer;
+	color:#306108;
+	font-family:Georgia;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #aade7c;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+	background-color:#5cb811;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+ 
+#dbutton {
+  padding-top: 10px;
+  margin-left: 90px;
 }
