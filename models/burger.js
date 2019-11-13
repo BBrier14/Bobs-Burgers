@@ -10,7 +10,7 @@ var burger = {
   },
 
   create: function(cols, vals, cb) {
-    orm.create("burgers", ["burger_name", "devoured"], [name, false], cb);
+    orm.create("burgers", ["burger_name", "devoured"], [burger_name, false], cb);
   },
 
   update: function(id, cb) {
