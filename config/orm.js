@@ -2,7 +2,7 @@
 //======================
 var connection = require("./connection.js");
 
-// Functions
+// Functions to be used in the orm's
 //======================
 function printQuestionMarks(num) {
   var arr = [];
@@ -23,7 +23,8 @@ function objToSql(ob) {
 }
 
 var orm = {
-  // Shows everything in DB
+
+  // This orm selects all data from the table and displays it
   all: function(tableInput, cb) {
     var queryString = "SELECT * FROM " + tableInput + ";";
     connection.query(queryString, function(err, result) {
@@ -33,7 +34,8 @@ var orm = {
       cb(result);
     });
   },
-  // Adds one into DB
+
+  // This orm is utilized when the user creates a new burger, inserting it into the databse
   create: function(table, cols, vals, cb) {
     var queryString = "INSERT INTO " + table;
 
@@ -51,7 +53,8 @@ var orm = {
       cb(result);
     });
   },
-  // Changes one in DB
+
+  // This orm updates the the database, changing the bool value assosicate with whichiever burger the user uodates
   update: function(table, objColVals, condition, cb) {
     var queryString = "UPDATE " + table;
 

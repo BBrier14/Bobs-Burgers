@@ -1,9 +1,12 @@
+{{!-- Heading --}}
 <h1>Bob's Burgers</h1>
 
+{{!-- This displays the menu of burgers ready to be devoured --}}
 <div class="col-md-6 text-center" class="task">
 	<div class="row">
 		<div id="menu">
 			<h3>Menu</h3>
+			{{!-- This displays all burgers that contain the value of devoured: false and gives the option to change the value to true --}}
 			{{#each burger_data}}
 			{{#unless this.devoured}}
 			<div class="col-md-9 text-center">
@@ -22,7 +25,7 @@
 		</div>
 	</div>
 </div>
-
+{{!-- This displays the list of devoured burgers, which have the value of devoured: true --}}
 <div class="col-md-6 text-center" class="task">
 	<div id="devoured">
 		<h3> Eaten</h3>
@@ -35,7 +38,7 @@
 </div>
 
 
-
+{{!-- This allows the user to input a new burger, which will be added to the database as well as the html --}}
 <div class="container">
 	<div class="row">
 		<div id="addburger">
