@@ -8,3 +8,7 @@ The user will begin on the home page. Three interconnected sections will populat
 This application is intended to focus on the use of ORM's and Handlebars. Handlebars populates the user interface with the data collected in the back-end. Mysql was used to store the database. Of course, Node is used to run the app from the terminal. This app is dependent on mysql, express, and express-handlebars
 ## Role
 This is a solo project. As the only developer, I analyzed and interpreted the needs, wants, and requirements of the Product Owner (Trilogy) and created a functioning application from top to bottom that met those expectations.
+## Screenshots
+![](readmeimages/1.png)
+![](readmeimages/2.png)
+![](readmeimages/3.png)
